@@ -1,0 +1,17 @@
+[package]
+name = "debug_chart"
+version = "2023.6.3"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "*", default-features = false, features = [
+    "rustls",
+    "blocking",
+    "json",
+] }
+serde = { version = "*", features = ["serde_derive", "derive"] }
+# serde_with = { version = "*" }
+serde_json = { version = "*" }
+plotters = { version = "*" }
+anyhow = { version = "*" }
+chrono = { version = "*", features = ["serde"] }
